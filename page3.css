@@ -1,0 +1,78 @@
+.road {
+    background-image: url(road.jpg);
+    position: absolute;
+    height: 40vh;
+    width: 500%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 5s linear infinite;
+    display: block;
+}
+.building {
+    background-image: url(city.png);
+    position: absolute;
+    bottom: 250px;
+    height: 40vh;
+    width: 500%;
+    background-repeat: repeat-x;
+    animation: building 5s linear infinite;
+    display: block;
+}
+.car {
+    position: relative;
+    left: 30%;
+    top: 180px;
+    z-index: 2;
+}
+.firstwheel{
+    position: relative;
+    left: 33%;
+    top: 60px;
+    z-index: 2;
+}
+.secondwheel{
+    position: relative;
+    left: 45%;
+    top: 60px;
+    z-index: 2;
+}
+.sun{
+    z-index: 2;
+    position: relative;
+    left: 80%;
+    bottom: 350px;
+}
+@keyframes  road {
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+@keyframes  building {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+@keyframes  car {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(1px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
+@keyframes  firstwheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes  secondwheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}

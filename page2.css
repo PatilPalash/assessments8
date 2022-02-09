@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+}
+.mainbox{
+    position: relative;
+    left: 43%;
+}
+ol{
+    list-style-type: decimal;
+    
+}
+a{
+    font-size: 32px;
+    position: relative;
+    left: 47%;
+}
+
+.text1,.text2,.text3,.text4,.text5,.text6,.text7{
+    background-color: green;
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    transition-property: width, height, background-color ; 
+    transition-duration: 2s;
+}
+/* .text3{
+    
+}
+.text4{
+    
+}
+.text5{
+    
+}
+.text6{
+    
+}
+.text7{
+    
+} */
+.text1:hover{
+    width: 300px;
+}
+.text2:hover{
+    width: 300px;
+    height: 300px;
+}
+.text3:hover{
+    width: 300px;
+    transition: all 2s linear;
+}
+.text4:hover{
+    width: 300px;
+    transition: all 2s ease;
+}
+.text5:hover{
+    width: 300px;
+    transition: all 2s ease-in;
+}
+.text6:hover{
+    width: 300px;
+    transition: all 2s ease-out;
+}
+.text7:hover{
+    width: 300px;
+    transition: all 2s ease-in-out;
+}
